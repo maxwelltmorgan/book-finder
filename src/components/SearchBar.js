@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
             <form className='search-bar'>
                 <div className='search-inner'>
                     <input className='search-input' type="text" placeholder="Search by book title or author..."/>
-                    <button>Search</button>
+                    <button className="search-button">Search</button>
                 </div>
             </form>
         );
