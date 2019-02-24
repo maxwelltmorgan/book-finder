@@ -4,9 +4,12 @@ import '../style/SearchBar.css';
 class SearchBar extends React.Component {
     render() {
         return(
-            <div className='search-bar'>
-              searchbar
-            </div>
+            <form className='search-bar'>
+                <div className='search-inner'>
+                    <input className='search-input' type="text" placeholder="Search by book title or author..."/>
+                    <button>Search</button>
+                </div>
+            </form>
         );
     }
 }
