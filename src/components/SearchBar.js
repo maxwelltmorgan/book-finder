@@ -11,6 +11,11 @@ class SearchBar extends React.Component {
         .then(response =>  response.json())
         .then(json => {
           console.log(json);
+          console.log(json.items[0].volumeInfo.imageLinks.thumbnail);
+          console.log(json.items[0].volumeInfo.title);
+          console.log(json.items[0].volumeInfo.authors[0]);
+          console.log(json.items[0].volumeInfo.publisher);
+          console.log(json.items[0].volumeInfo.infoLink);
         })
       };
 
