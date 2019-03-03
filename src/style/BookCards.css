@@ -2,16 +2,21 @@
     width: 100vw;
 }
 
+.bookcards-alignment {
+    text-align: center;
+}
+
 .bookcards-inner {
     background-color: white;
     display: inline-block;
     position: relative;
     width: 400px;
     height: 200px;
-    margin: 40px 10px 20px 40px;
+    margin: 40px 10px 20px 10px;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(166,163,166,1);
     -moz-box-shadow: 0px 2px 4px 0px rgba(166,163,166,1);
     box-shadow: 0px 2px 4px 0px rgba(166,163,166,1);
+    text-align: left;
 }
 
 .book-image {
@@ -62,3 +67,9 @@
     bottom: 20px;
     left: 150px;
 }
+
+@media (max-width: 600px) {
+    .bookcards-inner {
+      width: 350px;
+    }
+  }

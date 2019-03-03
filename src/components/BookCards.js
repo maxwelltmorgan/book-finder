@@ -6,7 +6,7 @@ class BookCards extends React.Component {
     render() {
         return(
             <section className='bookcards'>
-                
+                <div className='bookcards-alignment'>
                 {
                 this.props.items.map((item , i) => {
                         let {title, authors, publisher, imageLinks , infoLink} = item.volumeInfo
@@ -23,7 +23,7 @@ class BookCards extends React.Component {
                         );
                 })
                 }      
-                
+                </div>
             </section>
         );
     }
